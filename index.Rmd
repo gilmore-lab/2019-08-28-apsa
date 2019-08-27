@@ -22,7 +22,7 @@ params:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE, cache=TRUE)
+knitr::opts_chunk$set(echo = FALSE, cache=FALSE)
 source('R/write_video_clip_html.R')
 
 if(!require(databraryapi)){
@@ -66,11 +66,11 @@ qrcode::qrcode_gen(talk_url)
 <img src="https://pbs.twimg.com/profile_images/826768222363975680/8hO9VaFD.jpg" height=150px>
 </br>
 <img src="https://sloan.org/storage/app/media/Logos/Sloan-Logo-stacked-black-web.png" height=150px>
-<img src="http://newsroom.unl.edu/announce/files/file77330.jpg" height=150px/>
+<img src="https://newsroom.unl.edu/announce/files/file77330.jpg" height=150px/>
 <img src="https://www.unicef.org.hk/wp-content/uploads/2017/08/Logo-05_Lego-foundation_UNICEF_partnership.jpg" height=150px />
 </br>
 <img src="https://nationalpress.org/wp-content/uploads/2016/04/NIDA-logo-300x300.jpg" height=150px/>
-<img src="http://bewellva.com/wp-content/uploads/2017/12/NIMH-Logo_14-e1510955490255.jpg" height=150px/>
+<img src="https://bewellva.com/wp-content/uploads/2017/12/NIMH-Logo_14-e1510955490255.jpg" height=150px/>
 <img src="https://www.jsmf.org/assets/logo-small.png" height=150px/>
 
 <div class="notes">
@@ -109,7 +109,7 @@ write_video_clip_html('https://nyu.databrary.org/slot/9840/-/asset/11192/downloa
 ```
 
 <small>
-[Frank 2014](http://doi.org/10.17910/B7PP4W)
+[Frank, 2014](https://doi.org/10.17910/B7PP4W)
 </small>
 
 <!-- Physical abacus -->
@@ -125,7 +125,7 @@ write_video_clip_html('https://nyu.databrary.org/slot/9840/-/asset/11193/downloa
 ```
 
 <small>
-[Frank 2014](http://doi.org/10.17910/B7PP4W)
+[Frank, 2014](https://doi.org/10.17910/B7PP4W)
 </small>
 
 <!-- Mental abacus -->
@@ -138,11 +138,12 @@ That's right. It's a mental abacus.
 
 ---
 
-<iframe src="http://doi.org/10.17910/B7PP4W" height=600 width=1000>
-</iframe>
+```{r}
+knitr::include_url("https://doi.org/10.17910/B7PP4W", height = 600)
+```
 
 <small>
-[Frank 2014](http://doi.org/10.17910/B7PP4W)
+[Frank, 2014](https://doi.org/10.17910/B7PP4W)
 </small>
 
 <div class="notes">
@@ -175,7 +176,7 @@ write_video_clip_html('https://nyu.databrary.org/slot/9850/-/asset/11556/downloa
 ```
 
 <small>
-[DeLoache 2014](http://doi.org/10.17910/B7H019)
+[DeLoache, 2014](https://doi.org/10.17910/B7H019)
 </small>
 
 ---
@@ -185,7 +186,7 @@ write_video_clip_html('https://nyu.databrary.org/slot/9850/-/asset/11550/downloa
 ```
 
 <small>
-[DeLoache 2014](http://doi.org/10.17910/B7H019)
+[DeLoache 2014](https://doi.org/10.17910/B7H019)
 </small>
 
 ## ...a paper in *Science*
@@ -194,7 +195,7 @@ write_video_clip_html('https://nyu.databrary.org/slot/9850/-/asset/11550/downloa
 
 - Captures (& preserves)
 - Shows (& helps tell...)
-- Expands the scope of inquiry (e.g., words +)
+- Expands the scope of inquiry
 - Provides unparalleled opportunities for reuse
 
 <div class="notes">
@@ -211,7 +212,7 @@ Video also has unique strengths as research documentation.
 <img src="https://www.nature.com/news/polopoly_fs/7.36716.1469695923!/image/reproducibility-graphic-online1.jpeg_gen/derivatives/landscape_630/reproducibility-graphic-online1.jpeg" height=600px>
 </br>
 <small>
-[Baker, 2016](http://doi.org/10.1038/533452a)
+[Baker, 2016](https://doi.org/10.1038/533452a)
 </small>
 </div>
 
@@ -225,7 +226,7 @@ These are the results.
 <img src="https://www.nature.com/news/polopoly_fs/7.36718.1464174471!/image/reproducibility-graphic-online3.jpg_gen/derivatives/landscape_630/reproducibility-graphic-online3.jpg" width=700px>
 </br>
 <small>
-[Baker, 2016](http://doi.org/10.1038/533452a)
+[Baker, 2016](https://doi.org/10.1038/533452a)
 </small>
 </div>
 
@@ -238,7 +239,7 @@ These are the results.
 <img src="https://www.nature.com/news/polopoly_fs/7.36719.1464174488!/image/reproducibility-graphic-online4.jpg_gen/derivatives/landscape_630/reproducibility-graphic-online4.jpg" width=700px>
 </br>
 <small>
-[Baker, 2016](http://doi.org/10.1038/533452a)
+[Baker, 2016](https://doi.org/10.1038/533452a)
 </small>
 </div>
 
@@ -264,13 +265,13 @@ Karen Adolph and I argue that video recordings of research procedures can make b
 <!-- Caitlyn Fausey accidental and intentional videos -->
 
 ```{r}
-knitr::include_url("http://doi.org/10.17910/b7.873", height = 600)
+knitr::include_url("https://doi.org/10.17910/b7.873", height = 600)
 ```
 
 ---
 
 ```{r}
-knitr::include_url("http://doi.org/10.17910/B7.236", height = 600)
+knitr::include_url("https://doi.org/10.17910/B7.236", height = 600)
 ```
 
 ---
@@ -280,7 +281,7 @@ write_video_clip_html("https://nyu.databrary.org/slot/11647/0,84928/asset/40653/
 ```
 
 <small>
-[Yu 2016](http://doi.org/10.17910/B7.236)
+[Yu 2016](https://doi.org/10.17910/B7.236)
 </small>
 
 <div class="notes">
@@ -289,28 +290,28 @@ Let's say you're interested in where children and their parents look to explore 
 This video from Databrary shows what the raw video from eyetracking systems used by Yu et al. actually looks like.
 </div>
 
----
+<!-- --- -->
 
-<iframe src="http://doi.org/10.17910/B7.326" height=600 width=1000>
-</iframe>
+<!-- <iframe src="https://doi.org/10.17910/B7.326" height=600 width=1000> -->
+<!-- </iframe> -->
 
-<small>
-[Bahrick, 2017](http://doi.org/10.17910/B7.326)
-</small>
+<!-- <small> -->
+<!-- [Bahrick, 2017](https://doi.org/10.17910/B7.326) -->
+<!-- </small> -->
 
-<div class="notes">
-Or maybe you are interested in understanding more Lorraine Bahrick's multisensory assessment protocol.
-</div>
+<!-- <div class="notes"> -->
+<!-- Or maybe you are interested in understanding more Lorraine Bahrick's multisensory assessment protocol. -->
+<!-- </div> -->
 
----
+<!-- --- -->
 
-```{r, results='asis', echo=FALSE}
-write_video_clip_html('https://nyu.databrary.org/slot/16668/0,140984/asset/72645/download?inline=true', vid_w_pix = 1000, show_link = FALSE)
-```
+<!-- ```{r, results='asis', echo=FALSE} -->
+<!-- write_video_clip_html('https://nyu.databrary.org/slot/16668/0,140984/asset/72645/download?inline=true', vid_w_pix = 1000, show_link = FALSE) -->
+<!-- ``` -->
 
-<div class="notes">
-This video on Databrary shows what it looks like from a participant's perspective.
-</div>
+<!-- <div class="notes"> -->
+<!-- This video on Databrary shows what it looks like from a participant's perspective. -->
+<!-- </div> -->
 
 ## Even audio
 
@@ -321,11 +322,11 @@ Audio recordings can also be shared.
 ---
 
 ```{r}
-knitr::include_url("http://doi.org/10.17910/b7.339", height = 600)
+knitr::include_url("https://doi.org/10.17910/b7.339", height = 600)
 ```
 
 <small>
-[Cole, Gilmore, Perez-Edgar, & Scherf 2017](http://doi.org/10.17910/b7.339)
+[Cole, Gilmore, Perez-Edgar, & Scherf 2017](https://doi.org/10.17910/b7.339)
 </small>
 
 <div class="notes">
@@ -345,7 +346,7 @@ I'm largely a vision scientist, but more generally I'm interested in perceptual 
 </audio>
 
 <small>
-[Cole, Gilmore, Perez-Edgar, & Scherf 2017](http://doi.org/10.17910/b7.339)
+[Cole, Gilmore, Perez-Edgar, & Scherf 2017](https://doi.org/10.17910/b7.339)
 </small>
 
 <div class="notes">
@@ -511,7 +512,7 @@ Datavyu, a free open-source, annotation tool is another.
 ---
 
 ```{r, results='asis', echo=FALSE}
-write_video_clip_html("https://nyu.databrary.org/slot/27087/0,372193/asset/119877/download?inline=true", vid_w_pix = 800, vid_h_pix = 600, show_link = FALSE)
+write_video_clip_html("https://nyu.databrary.org/slot/27087/0,372193/asset/119877/download?inline=true", vid_w_pix = 800, vid_h_pix = 550, show_link = FALSE)
 ```
 
 <small>
@@ -531,8 +532,9 @@ We're also creating a large-scale, diverse and rich data set for others to explo
 
 ---
 
-<iframe src="https://play-project.org/" height=600 width=1000>
-</iframe>
+```{r}
+knitr::include_url("https://play-project.org/", height = 550)
+```
 
 <div class="notes">
 The entire PLAY project protocol, including videos of procedures, coding definitions, survey items, etc. is openly shared.
@@ -548,11 +550,11 @@ We're making progress on this front, too.
 
 ---
 
-<iframe src="https://nyu.databrary.org/volume/8" height=600 width=1000>
+<iframe src="https://nyu.databrary.org/volume/8" height=550 width=1000>
 </iframe>
 
 <small>
-[Tamis-LeMonda 2013](http://doi.org/10.17910/B7CC74)
+[Tamis-LeMonda, 2013](https://doi.org/10.17910/B7CC74)
 </small>
 
 <div class="notes">
@@ -563,7 +565,7 @@ Maybe you're interested in seeing whether it is large and diverse enough for you
 
 ---
 
-```{r vol-8-table, include=TRUE, echo=TRUE}
+```{r vol-8-table, include=TRUE, echo=TRUE, cache = TRUE}
 vol_8 <- databraryapi::download_session_csv(vol_id = 8)
 xtabs(formula = ~ participant.gender + participant.race, data = vol_8) %>%
   knitr::kable(.)
@@ -575,7 +577,7 @@ Using a few commands in the R programming language, you can securely download th
 
 ---
 
-```{r vol-8-race-by-gender, include=TRUE, echo=TRUE}
+```{r vol-8-race-by-gender, include=TRUE, echo=TRUE, cache = FALSE}
 race_gender <- vol_8 %>%
   filter(participant.gender %in% c('Male', 'Female')) %>%
   ggplot() +
@@ -583,10 +585,13 @@ race_gender <- vol_8 %>%
   facet_grid(. ~ participant.gender) +
   geom_bar(stat="count") +
   coord_flip() +
-  theme(axis.text.x = element_text(angle = 90, hjust = 1, size = 16),
+  theme(axis.text.x = element_text(angle = 90, 
+                                   hjust = 1, size = 16),
+        axis.text.y = element_text(size = 16),
+        axis.title.y = element_blank(),
         axis.title = element_text(size = 16),
         strip.text = element_text(size = 16),
-        legend.position = "bottom")
+        legend.position = "none")
 ```
 
 <div class="notes">
@@ -625,7 +630,7 @@ knitr::kable(vol_444_assets)
 ---
 
 ```{r prepare-lang-exp-plot, include=TRUE, message=FALSE, warning=FALSE, error=FALSE, echo=TRUE}
-lang_exp <- databraryapi::read_csv_data_as_df(session_id = play_session_id,
+lang_exp <- databraryapi::read_csv_data_as_df(session_id = play_session_id, 
                                               asset_id = 116787)
 
 lang_exp_plot <- lang_exp %>%
@@ -633,9 +638,9 @@ lang_exp_plot <- lang_exp %>%
   aes(x = language, fill = language) +
   facet_grid(exposure_context ~ .) +
   geom_histogram(stat='count') +
-  theme(axis.text = element_text(size = 16),
-        strip.text = element_text(size = 16),
-        axis.title = element_text(size = 13),
+  theme(axis.text = element_text(size = 15),
+        strip.text = element_text(size = 15),
+        axis.title = element_blank(),
         legend.position = "none")
 ```
 
@@ -668,7 +673,7 @@ Your browser does not support the video tag.
 ---
 
 - Databrary API returns segments given:
-- `start_time, end_time` in milliseconds
+- [`start_time, end_time`] in milliseconds
 
 <div class="notes">
 The Databrary API returns segments of video or audio gven a start_time and an end_time. So you can reproducibly "clip" a particularly interesting audio or video segment to show your collaborators.
@@ -693,6 +698,14 @@ write_video_clip_html("https://nyu.databrary.org/slot/14514/70009864,70048303/as
 <div class="notes">
 These scripts will work for ALL other authorized users on Databrary because they call on Databrary itself, not some file on your Box drive.
 </div>
+
+---
+
+```{r, out.width="550px"}
+knitr::include_graphics("img/ossmy-etal-2019.jpg")
+```
+
+[Ossmy, Gilmore, & Adolph, 2019](https://doi.org/10.1007/978-3-030-17798-0_14)
 
 ## Shared video data & documentation will
 
@@ -738,9 +751,9 @@ rogilmore@psu.edu</br>
 ---
 
 <small>
-This talk was produced on `r Sys.Date()` in [RStudio](http://rstudio.com) version using R Markdown and the reveal.JS framework.
+This talk was produced on `r Sys.Date()` in [RStudio](https://rstudio.com) version 1.2.1335 using R Markdown and the reveal.JS framework.
 The code and materials used to generate the slides may be found at <https://github.com/gilmore-lab/2019-08-28-apsa/>.
-Information about the R Session that produced the code is as follows:
+Information about the R Session is as follows:
 
 ---
 
