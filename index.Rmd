@@ -17,7 +17,8 @@ output:
       center: true
       touch: true
 params:
-  db_login: rogilmore@psu.edu
+  db_login: your@email.edu
+  talk_url: "https://gilmore-lab.github.io/2019-08-28-apsa/"
 ---
 
 ```{r setup, include=FALSE}
