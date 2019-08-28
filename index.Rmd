@@ -699,6 +699,8 @@ write_video_clip_html("https://nyu.databrary.org/slot/14514/70009864,70048303/as
 These scripts will work for ALL other authorized users on Databrary because they call on Databrary itself, not some file on your Box drive.
 </div>
 
+## Video is just one type of time series
+
 ---
 
 ```{r, out.width="550px"}
@@ -711,12 +713,34 @@ knitr::include_graphics("img/ossmy-etal-2019.jpg")
 
 ---
 
-- Make the behavioral sciences more robust & reproducible
+- Make the social & behavioral sciences more robust & reproducible
 - Accelerate discovery
 
 <div class="notes">
 In short, these tools for sharing video as data and documentation will make the behvaioral sciences more robust and reproducible and will accelerate discovery.
 </div>
+
+---
+
+>"*SRCD regards scientific integrity, transparency, and openness as essential for the conduct of research and its application to practice and policy.*"
+
+[Society for Research in Child Development (SRCD)  Policy](https://www.srcd.org/policy-scientific-integrity-transparency-and-openness)
+
+---
+
+>"*These values apply to research conduct, to the teaching of scientific methods, and to the translation of science into practice and policy.*"
+
+[SRCD Policy](https://www.srcd.org/policy-scientific-integrity-transparency-and-openness)
+
+---
+
+>"*SRCD regards it as an essential responsibility of the producers and consumers of child development research to act ethically, conscientiously, and with integrity...*"
+
+---
+
+>"*...and to strive for transparency and openness in research practice, publication, and dissemination.*"
+
+[SRCD Policy](https://www.srcd.org/policy-scientific-integrity-transparency-and-openness)
 
 # Next steps...
 
@@ -731,6 +755,16 @@ In short, these tools for sharing video as data and documentation will make the 
 ## Secure permission to share from research participants
 
 ## Collect, upload, & share video and audio recordings
+
+## Investing in the future of reproducible social science
+
+## A modest proposition: The 15% solution
+
+## Federal funding agencies should set aside...
+
+- 5\% of the research budget for data *repository operational support*
+- 5\% of the research budget for *data curation* activities
+- 5\% of the research budget for *secondary analyses* of shared data
 
 # Thank you
 
@@ -760,4 +794,3 @@ Information about the R Session is as follows:
 ```{r session-info}
 sessionInfo()
 ```
-
