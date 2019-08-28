@@ -540,7 +540,7 @@ knitr::include_url("https://play-project.org/", height = 550)
 The entire PLAY project protocol, including videos of procedures, coding definitions, survey items, etc. is openly shared.
 </div>
 
-## Platforms for discovery
+## Repositories as Platforms for discovery
 
 <div class="notes">
 Platforms for discovery require software that interacts with stored and shared data in interesting and useful ways.
@@ -607,7 +607,7 @@ race_gender
 ---
 
 ```{r, echo=TRUE, message=FALSE, warning=FALSE, error=FALSE}
-databraryapi::login_db(email = "rogilmore@psu.edu")
+databraryapi::login_db(email = params$db_login)
 
 play_session_id <- 26295
 play_vol_id <- 444
@@ -668,36 +668,36 @@ Your browser does not support the video tag.
 </video>
 </div>
 
-## "Clip" your audio or video
+<!-- ## "Clip" your audio or video -->
 
----
+<!-- --- -->
 
-- Databrary API returns segments given:
-- [`start_time, end_time`] in milliseconds
+<!-- - Databrary API returns segments given: -->
+<!-- - [`start_time, end_time`] in milliseconds -->
 
-<div class="notes">
-The Databrary API returns segments of video or audio gven a start_time and an end_time. So you can reproducibly "clip" a particularly interesting audio or video segment to show your collaborators.
-</div>
+<!-- <div class="notes"> -->
+<!-- The Databrary API returns segments of video or audio gven a start_time and an end_time. So you can reproducibly "clip" a particularly interesting audio or video segment to show your collaborators. -->
+<!-- </div> -->
 
----
+<!-- --- -->
 
-<img src="img/clip-transcript-example.jpg" height=600px/>
+<!-- <img src="img/clip-transcript-example.jpg" height=600px/> -->
 
----
+<!-- --- -->
 
-```{r, results='asis', echo=FALSE}
-write_video_clip_html("https://nyu.databrary.org/slot/14514/70009864,70048303/asset/61054/download?inline=true", vid_w_pix = 800, vid_h_pix = 600, show_link = FALSE)
-```
+<!-- ```{r, results='asis', echo=FALSE} -->
+<!-- write_video_clip_html("https://nyu.databrary.org/slot/14514/70009864,70048303/asset/61054/download?inline=true", vid_w_pix = 800, vid_h_pix = 600, show_link = FALSE) -->
+<!-- ``` -->
 
-## Prepare your video + other data for sharing
+<!-- ## Prepare your video + other data for sharing -->
 
----
+<!-- --- -->
 
-- Conduct scripted, reproducible visualizations & analyses
+<!-- - Conduct scripted, reproducible visualizations & analyses -->
 
-<div class="notes">
-These scripts will work for ALL other authorized users on Databrary because they call on Databrary itself, not some file on your Box drive.
-</div>
+<!-- <div class="notes"> -->
+<!-- These scripts will work for ALL other authorized users on Databrary because they call on Databrary itself, not some file on your Box drive. -->
+<!-- </div> -->
 
 ## Video is just one type of time series
 
@@ -709,16 +709,17 @@ knitr::include_graphics("img/ossmy-etal-2019.jpg")
 
 [Ossmy, Gilmore, & Adolph, 2019](https://doi.org/10.1007/978-3-030-17798-0_14)
 
-## Shared video data & documentation will
 
----
 
-- Make the social & behavioral sciences more robust & reproducible
-- Accelerate discovery
+# Next steps...
 
-<div class="notes">
-In short, these tools for sharing video as data and documentation will make the behvaioral sciences more robust and reproducible and will accelerate discovery.
-</div>
+## Busting some myths
+
+- Data X can't be shared...
+- Open sharing means public
+- My data are mine
+
+## Each one, reach one
 
 ---
 
@@ -742,21 +743,21 @@ In short, these tools for sharing video as data and documentation will make the 
 
 [SRCD Policy](https://www.srcd.org/policy-scientific-integrity-transparency-and-openness)
 
-# Next steps...
+<!-- ## Register for Databrary access -->
 
-## Register for Databrary access
+<!-- --- -->
 
----
+<!-- <img src="img/register-databrary.jpg" height=600px/> -->
 
-<img src="img/register-databrary.jpg" height=600px/>
+<!-- ## Download, test, and help improve the [*databraryapi*](https://github.com/PLAY-behaviorome/databraryapi) and [*databrarypy*](https://github.com/PLAY-behaviorome/databrarypy) packages -->
 
-## Download, test, and help improve the [*databraryapi*](https://github.com/PLAY-behaviorome/databraryapi) and [*databrarypy*](https://github.com/PLAY-behaviorome/databrarypy) packages
+<!-- ## Secure permission to share from research participants -->
 
-## Secure permission to share from research participants
+<!-- ## Collect, upload, & share video and audio recordings -->
 
-## Collect, upload, & share video and audio recordings
+## Investing in the future
 
-## Investing in the future of reproducible social science
+- ...of robust & reproducible social science
 
 ## A modest proposition: The 15% solution
 

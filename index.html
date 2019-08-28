@@ -515,7 +515,7 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <section>
     <h1 class="title">Video as data &amp; documentation</h1>
     <h2 class="author">Rick O. Gilmore</h2>
-    <h3 class="date">2019-08-28 11:57:24</h3>
+    <h3 class="date">2019-08-28 13:26:18</h3>
 </section>
 
 <section><section id="preliminaries" class="title-slide slide level1"><h1>Preliminaries</h1></section><section class="slide level2">
@@ -853,8 +853,8 @@ Private files are restricted to the authorized researcher who uploaded them and 
 <aside class="notes">
 <p>The entire PLAY project protocol, including videos of procedures, coding definitions, survey items, etc. is openly shared.</p>
 </aside>
-</section><section id="platforms-for-discovery" class="slide level2">
-<h2>Platforms for discovery</h2>
+</section><section id="repositories-as-platforms-for-discovery" class="slide level2">
+<h2>Repositories as Platforms for discovery</h2>
 <aside class="notes">
 <p>Platforms for discovery require software that interacts with stored and shared data in interesting and useful ways.</p>
 <p>We’re making progress on this front, too.</p>
@@ -938,7 +938,7 @@ Private files are restricted to the authorized researcher who uploaded them and 
 <p><img src="index_files/figure-revealjs/plot-race-gender-1.png" width="768" /></p>
 </section><section class="slide level2">
 
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1">databraryapi<span class="op">::</span><span class="kw">login_db</span>(<span class="dt">email =</span> <span class="st">&quot;rogilmore@psu.edu&quot;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1">databraryapi<span class="op">::</span><span class="kw">login_db</span>(<span class="dt">email =</span> params<span class="op">$</span>db_login)</a></code></pre></div>
 <pre><code>## [1] TRUE</code></pre>
 <div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1">play_session_id &lt;-<span class="st"> </span><span class="dv">26295</span></a>
 <a class="sourceLine" id="cb5-2" data-line-number="2">play_vol_id &lt;-<span class="st"> </span><span class="dv">444</span></a>
@@ -1023,50 +1023,41 @@ Private files are restricted to the authorized researcher who uploaded them and 
 <source src="mov/databrary-splash.mp4" type="video/mp4">
 Your browser does not support the video tag. </video>
 </div>
-</section><section id="clip-your-audio-or-video" class="slide level2">
-<h2>“Clip” your audio or video</h2>
-</section><section class="slide level2">
-
-<ul>
-<li>Databrary API returns segments given:</li>
-<li>[<code>start_time, end_time</code>] in milliseconds</li>
-</ul>
-<aside class="notes">
-<p>The Databrary API returns segments of video or audio gven a start_time and an end_time. So you can reproducibly “clip” a particularly interesting audio or video segment to show your collaborators.</p>
-</aside>
-</section><section class="slide level2">
-
-<p><img src="img/clip-transcript-example.jpg" height=600px/></p>
-</section><section class="slide level2">
-
-<p></br> <video width="800" height="600" controls> <source src="https://nyu.databrary.org/slot/14514/70009864,70048303/asset/61054/download?inline=true" type="video/mp4"> </video> </br></p>
-</section><section id="prepare-your-video-other-data-for-sharing" class="slide level2">
-<h2>Prepare your video + other data for sharing</h2>
-</section><section class="slide level2">
-
-<ul>
-<li>Conduct scripted, reproducible visualizations &amp; analyses</li>
-</ul>
-<aside class="notes">
-<p>These scripts will work for ALL other authorized users on Databrary because they call on Databrary itself, not some file on your Box drive.</p>
-</aside>
+<!-- ## "Clip" your audio or video -->
+<!-- --- -->
+<!-- - Databrary API returns segments given: -->
+<!-- - [`start_time, end_time`] in milliseconds -->
+<!-- <div class="notes"> -->
+<!-- The Databrary API returns segments of video or audio gven a start_time and an end_time. So you can reproducibly "clip" a particularly interesting audio or video segment to show your collaborators. -->
+<!-- </div> -->
+<!-- --- -->
+<!-- <img src="img/clip-transcript-example.jpg" height=600px/> -->
+<!-- --- -->
+<!-- ```{r, results='asis', echo=FALSE} -->
+<!-- write_video_clip_html("https://nyu.databrary.org/slot/14514/70009864,70048303/asset/61054/download?inline=true", vid_w_pix = 800, vid_h_pix = 600, show_link = FALSE) -->
+<!-- ``` -->
+<!-- ## Prepare your video + other data for sharing -->
+<!-- --- -->
+<!-- - Conduct scripted, reproducible visualizations & analyses -->
+<!-- <div class="notes"> -->
+<!-- These scripts will work for ALL other authorized users on Databrary because they call on Databrary itself, not some file on your Box drive. -->
+<!-- </div> -->
 </section><section id="video-is-just-one-type-of-time-series" class="slide level2">
 <h2>Video is just one type of time series</h2>
 </section><section class="slide level2">
 
 <p><img src="img/ossmy-etal-2019.jpg" width="550px" /></p>
 <p><a href="https://doi.org/10.1007/978-3-030-17798-0_14">Ossmy, Gilmore, &amp; Adolph, 2019</a></p>
-</section><section id="shared-video-data-documentation-will" class="slide level2">
-<h2>Shared video data &amp; documentation will</h2>
-</section><section class="slide level2">
-
+</section></section>
+<section><section id="next-steps" class="title-slide slide level1"><h1>Next steps…</h1></section><section id="busting-some-myths" class="slide level2">
+<h2>Busting some myths</h2>
 <ul>
-<li>Make the social &amp; behavioral sciences more robust &amp; reproducible</li>
-<li>Accelerate discovery</li>
+<li>Data X can’t be shared…</li>
+<li>Open sharing means public</li>
+<li>My data are mine</li>
 </ul>
-<aside class="notes">
-<p>In short, these tools for sharing video as data and documentation will make the behvaioral sciences more robust and reproducible and will accelerate discovery.</p>
-</aside>
+</section><section id="each-one-reach-one" class="slide level2">
+<h2>Each one, reach one</h2>
 </section><section class="slide level2">
 
 <blockquote>
@@ -1090,20 +1081,17 @@ Your browser does not support the video tag. </video>
 <p>“<em>…and to strive for transparency and openness in research practice, publication, and dissemination.</em>”</p>
 </blockquote>
 <p><a href="https://www.srcd.org/policy-scientific-integrity-transparency-and-openness">SRCD Policy</a></p>
-</section></section>
-<section><section id="next-steps" class="title-slide slide level1"><h1>Next steps…</h1></section><section id="register-for-databrary-access" class="slide level2">
-<h2>Register for Databrary access</h2>
-</section><section class="slide level2">
-
-<p><img src="img/register-databrary.jpg" height=600px/></p>
-</section><section id="download-test-and-help-improve-the-databraryapi-and-databrarypy-packages" class="slide level2">
-<h2>Download, test, and help improve the <a href="https://github.com/PLAY-behaviorome/databraryapi"><em>databraryapi</em></a> and <a href="https://github.com/PLAY-behaviorome/databrarypy"><em>databrarypy</em></a> packages</h2>
-</section><section id="secure-permission-to-share-from-research-participants" class="slide level2">
-<h2>Secure permission to share from research participants</h2>
-</section><section id="collect-upload-share-video-and-audio-recordings" class="slide level2">
-<h2>Collect, upload, &amp; share video and audio recordings</h2>
-</section><section id="investing-in-the-future-of-reproducible-social-science" class="slide level2">
-<h2>Investing in the future of reproducible social science</h2>
+<!-- ## Register for Databrary access -->
+<!-- --- -->
+<!-- <img src="img/register-databrary.jpg" height=600px/> -->
+<!-- ## Download, test, and help improve the [*databraryapi*](https://github.com/PLAY-behaviorome/databraryapi) and [*databrarypy*](https://github.com/PLAY-behaviorome/databrarypy) packages -->
+<!-- ## Secure permission to share from research participants -->
+<!-- ## Collect, upload, & share video and audio recordings -->
+</section><section id="investing-in-the-future" class="slide level2">
+<h2>Investing in the future</h2>
+<ul>
+<li>…of robust &amp; reproducible social science</li>
+</ul>
 </section><section id="a-modest-proposition-the-15-solution" class="slide level2">
 <h2>A modest proposition: The 15% solution</h2>
 </section><section id="federal-funding-agencies-should-set-aside" class="slide level2">
