@@ -16,6 +16,12 @@ output:
       previewLinks: false
       center: true
       touch: true
+  ioslides_presentation:
+    self_contained: true
+    lib_dir: libs
+    widescreen: true
+    incremental: false
+    transition: default
 params:
   db_login: your@email.edu
   talk_url: "https://gilmore-lab.github.io/2019-08-28-apsa/"
@@ -70,7 +76,8 @@ qrcode::qrcode_gen(talk_url)
 <img src="https://www.unicef.org.hk/wp-content/uploads/2017/08/Logo-05_Lego-foundation_UNICEF_partnership.jpg" height=150px />
 </br>
 <img src="https://nationalpress.org/wp-content/uploads/2016/04/NIDA-logo-300x300.jpg" height=150px/>
-<img src="https://bewellva.com/wp-content/uploads/2017/12/NIMH-Logo_14-e1510955490255.jpg" height=150px/>
+<!-- NIMH logo -->
+<img src="https://logodix.com/logo/1750528.jpg" height=150px/>
 <img src="https://www.jsmf.org/assets/logo-small.png" height=150px/>
 
 <div class="notes">
